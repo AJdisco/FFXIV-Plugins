@@ -1,0 +1,18 @@
+[
+  {
+    "Author": "AJdisco",
+    "Name": "Sub Profits",
+    "InternalName": "SubProfits",
+    "AssemblyVersion": "1.0.0.0",
+    "Description": "Tracks the vendor value of selected inventory items alongside your gil.",
+    "Punchline": "Track item value plus gil.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/AJdisco/SubProfits",
+    "Tags": ["inventory", "gil", "submarines"],
+    "DalamudApiLevel": 13,
+    "IconUrl": "https://raw.githubusercontent.com/AJdisco/SubProfits/main/images/icon.png",
+    "DownloadLinkInstall": "https://github.com/AJdisco/SubProfits/releases/download/v1.0.0.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/AJdisco/SubProfits/releases/download/v1.0.0.0/latest.zip",
+    "LastUpdate": "1760000000"
+  }
+]
