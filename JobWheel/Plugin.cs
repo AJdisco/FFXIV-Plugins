@@ -22,6 +22,8 @@ public sealed class Plugin : IDalamudPlugin
     private readonly WheelService service;
     private readonly WindowSystem windowSystem = new("JobWheel");
     private readonly WheelWindow window;
+    private readonly IDutyState.DutyStartedDelegate dutyStartedHandler;
+    private readonly IDutyState.DutyCompletedDelegate dutyCompletedHandler;
 
     public Plugin()
     {
@@ -39,18 +41,16 @@ public sealed class Plugin : IDalamudPlugin
         PluginInterface.UiBuilder.Draw += windowSystem.Draw;
         PluginInterface.UiBuilder.OpenMainUi += window.Toggle;
 
-        DutyState.DutyStarted += OnDutyStarted;
-        DutyState.DutyCompleted += OnDutyCompleted;
+        dutyStartedHandler = _ => service.OnDutyStarted();
+        dutyCompletedHandler = _ => service.OnDutyCompleted();
+        DutyState.DutyStarted += dutyStartedHandler;
+        DutyState.DutyCompleted += dutyCompletedHandler;
     }
-
-    private void OnDutyStarted(IDutyStateEventArgs args) => service.OnDutyStarted();
-
-    private void OnDutyCompleted(IDutyStateEventArgs args) => service.OnDutyCompleted();
 
     public void Dispose()
     {
-        DutyState.DutyStarted -= OnDutyStarted;
-        DutyState.DutyCompleted -= OnDutyCompleted;
+        DutyState.DutyStarted -= dutyStartedHandler;
+        DutyState.DutyCompleted -= dutyCompletedHandler;
         PluginInterface.UiBuilder.Draw -= windowSystem.Draw;
         PluginInterface.UiBuilder.OpenMainUi -= window.Toggle;
         windowSystem.RemoveAllWindows();

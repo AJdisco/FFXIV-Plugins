@@ -1,3 +1,8 @@
 <Solution>
-  <Project Path="JobWheel/JobWheel.csproj" />
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="JobWheel.csproj">
+    <Platform Project="x64" />
+  </Project>
 </Solution>

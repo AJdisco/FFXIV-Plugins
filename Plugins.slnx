@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="JobWheel/JobWheel.csproj">
+    <Platform Project="x64" />
+  </Project>
   <Project Path="SubProfits/SubProfits.csproj" />
 </Solution>
