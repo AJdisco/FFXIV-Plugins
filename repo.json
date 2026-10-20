@@ -24,7 +24,7 @@
     "Author": "AJdisco",
     "Name": "Job Wheel",
     "InternalName": "JobWheel",
-    "AssemblyVersion": "1.0.0.0",
+    "AssemblyVersion": "1.1.1.0",
     "Description": "Spin a wheel of jobs. The wheel picks one, switches you to its gearset, and removes it from the wheel once you finish a duty on it.",
     "Punchline": "Spin a wheel, play the job it picks.",
     "ApplicableVersion": "any",
