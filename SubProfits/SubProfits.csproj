@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <!-- Dalamud looks for images/icon.png next to the DLL, so the Link sets that output path. -->
-    <Content Include="..\Images\Icon.png">
+    <Content Include="..\Images\SubProfitsIcon.png">
       <Link>images\icon.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>false</Visible>
