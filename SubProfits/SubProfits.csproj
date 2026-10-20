@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+      <Version>1.0.0.0</Version>
+    <!-- Manifest fields (see https://github.com/goatcorp/DalamudPackager/blob/827d88dc/DalamudPackager/DalamudPackager.cs#L420) -->
+    <Author>Ivory Frog</Author>
+    <Name>Subprofits</Name>
+    <Punchline>I was lazy to track my Sub profits</Punchline>
+    <Description>A plugin to track how much gil items are worth, added to your total balance. Almost fully AI generated. I was just lazy.</Description>
+    <RepoUrl>https://github.com/AJdisco/SubProfits</RepoUrl>
+    <Tags>AI;plugin;Gil</Tags>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\Data\Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
+</Project>
