@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Dalamud.NET.Sdk/15.0.0">
   <PropertyGroup>
-    <Version>1.1.1.0</Version>
+    <Version>1.0.0.0</Version>
     <Author>Ivory Frog</Author>
     <Name>Job Wheel</Name>
     <Punchline>Spin a wheel, play the job it picks.</Punchline>
@@ -10,12 +10,13 @@
     <Tags>AI;plugin;Jobs;Challenge</Tags>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-    <ItemGroup>
-        <!-- Dalamud looks for images/icon.png next to the DLL, so the Link sets that output path. -->
-        <Content Include="..\Images\JobWheelIcon.png">
-            <Link>images\JobWheelIcon.png</Link>
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-            <Visible>false</Visible>
-        </Content>
-    </ItemGroup>
+
+  <ItemGroup>
+    <!-- Dalamud looks for images/icon.png next to the DLL, so the Link sets that output path. -->
+    <Content Include="..\Images\JobWheelIcon.png">
+      <Link>images\icon.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
 </Project>

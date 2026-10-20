@@ -15,7 +15,7 @@
     ],
     "CommandName": "/subprofits",
     "DalamudApiLevel": 15,
-    "IconUrl": "https://raw.githubusercontent.com/AJdisco/FFXIV-Plugins/main/Images/Icon.png",
+    "IconUrl": "https://raw.githubusercontent.com/AJdisco/FFXIV-Plugins/main/Images/SubProfitsIcon.png",
     "DownloadLinkInstall": "https://github.com/AJdisco/FFXIV-Plugins/releases/download/v1.1.0.0/latest.zip",
     "DownloadLinkUpdate": "https://github.com/AJdisco/FFXIV-Plugins/releases/download/v1.1.0.0/latest.zip",
     "LastUpdate": "1792497600"
